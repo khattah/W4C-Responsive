@@ -393,3 +393,64 @@ button {
     justify-content: flex-end;
   }
 }
+@media (min-width: 1024px) {
+  .header-content {
+    min-height: 88px;
+  }
+
+  .desktop-nav {
+    gap: 2.25rem;
+  }
+
+  .hero {
+    padding-block: 6.5rem;
+  }
+
+  .hero-content {
+    grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+    gap: 5rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero-visual {
+    min-height: 480px;
+  }
+
+  .features {
+    padding-block: 6rem;
+  }
+
+  .section-heading {
+    margin-bottom: 3rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .feature-card:last-child {
+    grid-column: auto;
+  }
+
+  .feature-card {
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgb(63 42 32 / 12%);
+  }
+
+  .testimonial {
+    padding-block: 6rem;
+  }
+
+  .site-footer {
+    padding-block: 3rem;
+  }
+}
