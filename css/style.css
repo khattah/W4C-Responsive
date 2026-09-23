@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #3f2a20;
+  --color-secondary: #c8874c;
+  --color-background: #f7f1e8;
+  --color-text: #231f1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
