@@ -290,3 +290,63 @@ button {
   color: #ffffff;
   text-decoration: underline;
 }
+@media (min-width: 768px) {
+  .header-content {
+    min-height: 80px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .desktop-nav a {
+    position: relative;
+    padding-block: 0.5rem;
+    font-weight: 700;
+  }
+
+  .desktop-nav a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--color-secondary);
+    transform: scaleX(0);
+    transition: transform 180ms ease;
+  }
+
+  .desktop-nav a:hover::after,
+  .desktop-nav a:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .hero {
+    padding-block: 5rem;
+  }
+
+  .hero-content {
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.5rem, 7vw, 5rem);
+  }
+
+  .hero-visual {
+    min-height: 420px;
+  }
+}
