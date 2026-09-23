@@ -164,3 +164,52 @@ button {
 .coffee-card span:last-child {
   color: #6b5a50;
 }
+.features {
+  padding-block: 4rem;
+  background-color: #ffffff;
+}
+
+.section-heading {
+  max-width: 38rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(2rem, 9vw, 3rem);
+  line-height: 1.1;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border: 1px solid rgb(63 42 32 / 12%);
+  border-radius: 16px;
+  background-color: var(--color-background);
+}
+
+.feature-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  font-size: 1.6rem;
+}
+
+.feature-card h3 {
+  margin: 1.25rem 0 0.5rem;
+  color: var(--color-primary);
+  font-size: 1.35rem;
+}
+
+.feature-card p {
+  margin: 0;
+  line-height: 1.6;
+}
