@@ -257,3 +257,36 @@ button {
   color: rgb(255 255 255 / 75%);
   font-size: 0.95rem;
 }
+.site-footer {
+  padding-block: 2.5rem;
+  background-color: #291c16;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.copyright {
+  margin: 0.75rem 0 0;
+  color: rgb(255 255 255 / 70%);
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+}
