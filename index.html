@@ -3,125 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Northbound Coffee</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i"
+  >
   <link rel="stylesheet" href="css/style.css">
 </head>
-<main>
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-copy">
-        <p class="eyebrow">Roasted for the road ahead</p>
 
-        <h1>Better coffee begins at the source.</h1>
-
-        <p class="hero-text">
-          Thoughtfully sourced beans, roasted in small batches and shipped
-          fresh from our northern roastery.
-        </p>
-
-        <a class="button" href="#">Shop our coffee</a>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="coffee-card">
-          <span class="coffee-icon">☕</span>
-          <strong>Freshly roasted</strong>
-          <span>Small batches every week</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="features" id="about">
-  <div class="container">
-    <div class="section-heading">
-      <p class="eyebrow">Why Northbound?</p>
-      <h2>Coffee made with purpose.</h2>
-    </div>
-
-    <div class="feature-grid">
-      <article class="feature-card">
-        <span class="feature-icon" aria-hidden="true">🌱</span>
-        <h3>Ethically Sourced</h3>
-        <p>
-          We work with responsible growers and pay fairly for exceptional,
-          traceable coffee beans.
-        </p>
-      </article>
-
-      <article class="feature-card">
-        <span class="feature-icon" aria-hidden="true">🔥</span>
-        <h3>Small Batch Roasted</h3>
-        <p>
-          Every batch is carefully roasted to bring out the natural character
-          of each origin.
-        </p>
-      </article>
-
-      <article class="feature-card">
-        <span class="feature-icon" aria-hidden="true">📦</span>
-        <h3>Shipped Fresh</h3>
-        <p>
-          Your coffee is packed immediately after roasting and delivered
-          directly to your door.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-<section class="testimonial">
-  <div class="container">
-    <figure class="testimonial-card">
-      <span class="quote-mark" aria-hidden="true">“</span>
-
-      <blockquote>
-        Northbound Coffee has completely changed my morning routine. The beans
-        arrive incredibly fresh, and every cup tastes like it came from my
-        favourite local café.
-      </blockquote>
-
-      <figcaption>
-        <strong>Maya Thompson</strong>
-        <span>Northbound subscriber</span>
-      </figcaption>
-    </figure>
-  </div>
-</section>
-</main>
-<footer class="site-footer" id="contact">
-  <div class="container footer-content">
-    <div>
-      <a class="logo" href="#">Northbound <span>Coffee</span></a>
-      <p class="copyright">
-        &copy; 2026 Northbound Coffee. All rights reserved.
-      </p>
-    </div>
-
-    <nav class="footer-links" aria-label="Social media links">
-      <a href="#">Instagram</a>
-      <a href="#">Facebook</a>
-      <a href="#">LinkedIn</a>
-    </nav>
-  </div>
-</footer>
 <body>
-  <header class="site-header">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="home">
     <div class="container header-content">
-      <a class="logo" href="#">Northbound <span>Coffee</span></a>
+      <a class="logo" href="#home">
+        Northbound <span>Coffee</span>
+      </a>
 
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#home" aria-current="page">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <button class="menu-button" type="button" aria-label="Open navigation">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
   </header>
+
+  <main id="main-content">
+    <section class="hero" id="shop">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Roasted for the road ahead</p>
+
+          <h1>Better coffee begins at the source.</h1>
+
+          <p class="hero-text">
+            Thoughtfully sourced beans, roasted in small batches and shipped
+            fresh from our northern roastery.
+          </p>
+
+          <a class="button" href="#contact">Shop our coffee</a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="coffee-card">
+            <span class="coffee-icon">☕</span>
+            <strong>Freshly roasted</strong>
+            <span>Small batches every week</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why Northbound?</p>
+          <h2>Coffee made with purpose.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🌱</span>
+            <h3>Ethically Sourced</h3>
+            <p>
+              We work with responsible growers and pay fairly for exceptional,
+              traceable coffee beans.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🔥</span>
+            <h3>Small Batch Roasted</h3>
+            <p>
+              Every batch is carefully roasted to bring out the natural
+              character of each origin.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">📦</span>
+            <h3>Shipped Fresh</h3>
+            <p>
+              Your coffee is packed immediately after roasting and delivered
+              directly to your door.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container">
+        <figure class="testimonial-card">
+          <span class="quote-mark" aria-hidden="true">“</span>
+
+          <blockquote>
+            Northbound Coffee has completely changed my morning routine. The
+            beans arrive incredibly fresh, and every cup tastes like it came
+            from my favourite local café.
+          </blockquote>
+
+          <figcaption>
+            <strong>Maya Thompson</strong>
+            <span>Northbound subscriber</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-content">
+      <div>
+        <a class="logo" href="#home">
+          Northbound <span>Coffee</span>
+        </a>
+
+        <p class="copyright">
+          &copy; 2026 Northbound Coffee. All rights reserved.
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="Social media links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
