@@ -350,3 +350,46 @@ button {
     min-height: 420px;
   }
 }
+@media (min-width: 768px) {
+  .features {
+    padding-block: 5rem;
+  }
+
+  .section-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .feature-card {
+    padding: 2rem;
+  }
+
+  .feature-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .testimonial {
+    padding-block: 5rem;
+  }
+
+  .testimonial-card {
+    padding: 3rem;
+  }
+
+  .testimonial blockquote {
+    font-size: 1.6rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+
+  .footer-links {
+    justify-content: flex-end;
+  }
+}
